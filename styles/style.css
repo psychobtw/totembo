@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: var(--mr);
+}
+
 .container {
     max-width: 1320px;
     width: 100%;
@@ -31,3 +35,39 @@ ul {
 }
 
 /* Root end */
+
+/* Header start */
+
+
+.header__nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 12px 20px 12px;
+    border-bottom: 2px solid var(--black);
+}
+
+.header__nav-title {
+    color: var(--black);
+    font-family: var(--mb);
+    font-size: 32px;
+    line-height: 23px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__nav-link {
+    color: var(--black);
+    font-size: 18px;
+    line-height: 122%;
+}
+
+.header__nav-icon {
+    margin-right: 15px;
+}
+
+/* Header end */
