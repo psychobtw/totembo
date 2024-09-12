@@ -1,6 +1,6 @@
 @import 'fonts.css';
 
-/* Root start */
+/* Root-Start */
 
 :root {
     --mb: 'Montserrat-Bold';
@@ -36,9 +36,9 @@ ul {
     list-style: none;
 }
 
-/* Root end */
+/* Root-End */
 
-/* Header start */
+/* Header-Start */
 
 
 .header__nav-box {
@@ -155,9 +155,9 @@ ul {
     z-index: 3;
 }
 
-/* Header end */
+/* Header-End */
 
-/* Main start */
+/* Main-Start */
 
 .main__title {
     color: rgb(0, 0, 0);
@@ -214,6 +214,9 @@ ul {
 }
 
 .main__sales-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     position: absolute;
     right: 20px;
     top: 20px;
@@ -226,4 +229,246 @@ ul {
     padding: 15px;
 }
 
-/* Main end */
+.main__sales-item1,
+.main__sales-item2,
+.main__sales-item3,
+.main__sales-item4,
+.main__sales-item7,
+.main__sales-item8,
+.main__sales-item9,
+.main__sales-item11 {
+    position: relative;
+}
+
+.main__sales-item1::before {
+    content: 'NEW';
+}
+
+.main__sales-item2::before {
+    content: '15%';
+}
+
+.main__sales-item3::before {
+    content: '30%';
+}
+
+.main__sales-item4::before {
+    content: '10%';
+}
+
+.main__sales-item7::before {
+    content: '50%';
+}
+
+.main__sales-item8::before {
+    content: '20%';
+}
+
+.main__sales-item9::before {
+    content: '30%';
+}
+
+.main__sales-item11::before {
+    content: '10%';
+}
+
+.main__sales-item1::before,
+.main__sales-item2::before,
+.main__sales-item3::before,
+.main__sales-item4::before,
+.main__sales-item7::before,
+.main__sales-item8::before,
+.main__sales-item9::before,
+.main__sales-item11::before {
+    color: var(--gray);
+    font-size: 20px;
+    line-height: 120%;
+    border-radius: 10px;
+    background: var(--black);
+    padding: 13px 40px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 3;
+}
+
+.main__section-news {
+    margin-bottom: 60px;
+}
+
+.main__text {
+    color: rgb(50, 50, 50);
+    font-size: 30px;
+    line-height: 123%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+
+.main__news-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0 12px 0 12px;
+}
+
+.main__news-item1 {
+    border-radius: 10px;
+    background: url(../images/news1.jpg) no-repeat center /cover;
+}
+
+.main__news-item2 {
+    border-radius: 10px;
+    background: url(../images/news2.jpg) no-repeat center /cover;
+}
+
+.main__news-item1,
+.main__news-item2 {
+    max-width: 636px;
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.main__news-item1::before,
+.main__news-item2::before {
+    content: 'СОВЕТЫ';
+}
+
+.main__news-item1::before,
+.main__news-item2::before {
+    border-radius: 8px;
+    background: var(--gray);
+    color: var(--black);
+    font-size: 20px;
+    line-height: 120%;
+    padding: 13px 30px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.main__news-title {
+    color: var(--gray);
+    font-family: var(--mb);
+    font-size: 22px;
+    line-height: 122%;
+    width: 466px;
+    text-align: left;
+    margin-left: 60px;
+}
+
+.main__news-text {
+    width: 462px;
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 122%;
+    margin: 30px 0 80px 60px;
+    
+}
+
+.main__news-time {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    gap: 10px;
+}
+
+.main__news-date {
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 125%;
+    z-index: 3;
+}
+
+/* Main-End */
+
+/* Footer-Start */
+
+.footer {
+    background: var(--black);
+}
+
+.footer__box  {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 200px;
+}
+
+.footer__info-title {
+    color: var(--gray);
+    font-family: var(--mb);
+    font-size: 32px;
+    line-height: 72%;
+    margin-top: 100px;
+}
+
+.footer__info-list,
+.footer__products-list {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__info-link,
+.footer__products-link {
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 122%;
+}
+
+.footer__products-title,
+.footer__contacts-title {
+    color: var(--gray);
+    font-size: 22px;
+    line-height: 122%;
+    letter-spacing: 2.2px;
+}
+
+.footer__contacts-info {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__contacts-adress,
+.footer__numbers-tel,
+.footer__contacts-email {
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 122%;
+}
+
+.footer__contacts-media {
+    margin-top: 60px;
+}
+
+.footer__media-title {
+    color: var(--gray);
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2.5px;
+}
+
+.footer__contacts-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__media-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+
+/* Footer-End */
